@@ -10,7 +10,7 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '886ae6bfdf9350c22c042026e675018566630b066d08bb373fd014067ff221274168e1f5282ab26944a9e123a27fb41cf4721f6a282fc59572a158b68f6bf98f'
   config.unlock_strategy = :email
-  config.maximum_attemps = 4
+  config.maximum_attempts = 4
 
   config.timeout_in = 10.minutes
   # ==> Controller configuration
