@@ -64,3 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'omniauth-twitter'
 gem 'dotenv-rails'
+gem 'bootstrap'
+gem 'jquery-rails'
+gem 'kaminari'
+gem 'faker'
