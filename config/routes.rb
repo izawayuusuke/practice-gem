@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root to: 'students#index'
+  get 'students/index'
+  get 'search', to: 'students#search'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
