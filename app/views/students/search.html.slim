@@ -1,4 +1,31 @@
 h1
+  | 検索クエリ
+- unless params[:q][:name_cont].empty?
+  | 名前:
+  = params[:q][:name_cont]
+  br
+
+- unless params[:q][:department_id_eq].empty?
+  | 学部:
+  = Department.find(params[:q][:department_id_eq]).name
+  br
+
+- unless params[:q][:sex_eq].empty?
+  | 性別:
+  = params[:q][:sex_eq]
+  br
+
+- unless params[:q][:age_gteq].empty?
+  | 年齢:
+  = params[:q][:age_gteq]
+  | 歳以上
+  br
+
+- unless params[:q][:subjects_id_in].reject(&:blank?).empty?
+  | 履修科目:
+  = params[:q][:subjects_id_in].reject(&:blank?).map{|subject_id| Subject.find(subject_id).name}.join(', ')
+
+h1
   | 検索結果
 table
   - @students.each do |student|
