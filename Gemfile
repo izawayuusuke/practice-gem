@@ -54,6 +54,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'awesome_print'
+  gem 'annotate'
 end
 
 group :test do
@@ -79,3 +80,5 @@ gem 'ransack'
 gem 'slim-rails'
 gem 'html2slim'
 gem 'font-awesome-sass'
+gem 'activerecord-import'
+gem 'active_hash'

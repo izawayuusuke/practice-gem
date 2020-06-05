@@ -1,22 +1,16 @@
 # == Schema Information
 #
-# Table name: students
+# Table name: addresses
 #
 #  id            :integer          not null, primary key
-#  age           :integer
-#  name          :string
-#  sex           :string
+#  city          :string
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
-#  department_id :integer
-#
-# Indexes
-#
-#  index_students_on_department_id  (department_id)
+#  prefecture_id :integer
 #
 require 'test_helper'
 
-class StudentTest < ActiveSupport::TestCase
+class AddressTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
